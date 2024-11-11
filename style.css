@@ -1,0 +1,468 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search
+{
+    display: flex;
+    align-items: center;
+    
+}
+.searchInput::placeholder
+{
+color: lightgrey;
+}
+
+.limitedOffer
+{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+.navBottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuItems
+{
+    margin-right: 40px;
+    cursor: pointer;
+    color: lightgray;
+}
+.slider
+{
+    background-image: url(https://media.istockphoto.com/id/2162961846/photo/horizontal-rustic-dark-gray-black-colored-old-weathered-cracked-rustic-distressed-bricks.webp?a=1&b=1&s=612x612&w=0&k=20&c=-F3L2V2flOo5EmNdCnvQDFjdzuBDAAV3CxMnbk7NChA=);
+}
+.sliderWrapper
+{
+    display: flex;
+    width:500vw;
+    transition: all 1.5s ease-in-out;
+    /* justify-content: space-between; */
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    z-index: 1;
+}
+.sliderPrice
+{ 
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* align-items: center; */
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+.sliderImg
+{
+    position: absolute;
+    top: 10%;
+    width: 30%;
+    z-index: 1;
+   
+}
+.sliderImg1
+{
+    position: absolute;
+    top: 5%;
+    width: 35%;
+    z-index: 1;
+    
+}
+.sliderImg2
+{
+    position: absolute;
+    top: 10%;    
+    width: 35%;
+    z-index: 1;
+    
+}
+.sliderBg{
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;    
+    background-color: yellow;
+
+}
+
+.buyButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fafafa;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid #fafafa;
+    background: #252525;
+    box-shadow: 2px 2px #fafafa;
+    cursor: pointer;
+    margin: 30px 0;
+  }
+  
+  .buyButton:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+  }
+  .buyButton:hover
+  {
+    background-color: white;
+    color: black;
+  }
+  .sliderItem:nth-child(1).sliderBg
+  {
+    background-color: green;
+  }
+  .sliderItem:nth-child(2).sliderBg
+  {
+    background-color: purple;
+  }
+
+  .features
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  .feature
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+  .featureIcon{
+    width: 50px;
+    height: 50px;
+  }
+  .featureTitle
+  {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  .featureDiscription
+  {
+    color: gray;
+    width: 50%;
+    height: 100px;
+  }
+  .product
+  {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+  }
+  .productImg
+  {
+    width: 35%;
+
+  }
+  .productDetails
+  {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+
+  }
+  .productTitle
+  {
+    font-size: 50px;
+    font-weight: 900;
+
+  }
+  .productDes{
+    color: gray;
+    font-size: 15px;
+  }
+  .sizes ,.colors
+  {
+    display: flex;
+    margin-bottom: 20px;
+    
+  }
+  .color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .color:last-child{
+    background-color: blue;
+  }
+
+  .size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .productBtn{
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fafafa;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid #fafafa;
+    background: #252525;
+    box-shadow: 2px 2px #fafafa;
+    cursor: pointer;
+    margin: 30px 0;
+  }
+  
+  .productBtn:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+  }
+  .productBtn:hover
+  {
+    background-color: white;
+    color: black;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .payment
+  {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 13px 2px #000000; 
+    box-shadow: 0px 0px 13px 2px #000000;
+    position: relative;
+  }
+  .payTitle
+  {
+    font-size: 20px;
+    color: lightgrey;
+  }
+  label{
+    font-size: 14px;
+    font-weight: 300;
+  }
+.cardInfo
+{
+  display: flex;
+  justify-content: space-between;
+  
+}
+  .payInput
+  {
+    
+    padding: 8px;
+    margin: 5px 0px;
+    border:none;
+    border-bottom: 1px solid gray;
+  }
+  .sm{
+    width: 30%;
+  }
+
+  .payInput::placeholder{
+    color: rgb(163, 163 ,163);
+  }
+  .cardIcons
+  {
+    display: flex;
+    
+  }
+  .cardIcon
+  {
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
+  }
+  .payButton
+  {
+    position: absolute;
+    height: 30px;
+    bottom: -0;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    background-color: green;
+    color: white;
+    border:none;
+    cursor: pointer;
+  }
+  .close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+  }
+  .gallery
+  {
+    padding: 50px;
+    display: flex;
+    
+  }
+  .galleryItem
+  {
+    flex: 1;
+    padding: 50px;
+
+  }
+  .galleryImg
+  {
+    width: 100%;
+
+  }
+  .newSeason
+  {
+    display: flex;
+
+  }
+  .newSeasonItem
+  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 1;    
+    background-color: black;
+    color: white;
+  }
+  .newSeasonImg{
+    width: 100%;
+  }
+  .newSeasonItem
+  {
+    font-size: 30px;
+  }
+  .nsButton
+  {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+    footer{
+    display: flex;
+  }
+  .footerLeft
+  {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+.fMenuList
+  {
+    padding: 0;
+  }
+  .fListItem
+  {
+    color: gray;
+    cursor: pointer;
+  }
+  .fMenuTitle
+  {
+    font-size: 20px;
+  }
+  .footerRight
+  {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .fMail
+  {
+    display: flex;
+  }
+  .fInput
+  {
+    padding: 5px;
+
+  }
+  .fButton
+  {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+  }
+  .fIcons
+  {
+    display: flex;
+
+  }
+  .fIcon{
+
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  
+
+  
+
